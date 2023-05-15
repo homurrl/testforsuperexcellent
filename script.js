@@ -3,6 +3,14 @@
 
 //const dayjs = require("dayjs");
 
+const dayjs = require('dayjs');
+
+// Get the current date and time
+const now = dayjs();
+
+// Display the current date and time in the "currentDay" element
+document.getElementById("currentDay").innerHTML = now.format("YYYY-MM-DD HH:mm:ss");
+
 // in the html.
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
